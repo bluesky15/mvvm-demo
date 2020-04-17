@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "852341205467",
+    "firebase_url": "https://firedemo-7efad.firebaseio.com",
+    "project_id": "firedemo-7efad",
+    "storage_bucket": "firedemo-7efad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852341205467:android:797cf82b4e53f70b",
+        "android_client_info": {
+          "package_name": "com.kalinga.apps.sectretmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852341205467-pogkv4s72k1cvkq7i4t71o2fmatk8foe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kalinga.apps.sectretmessenger",
+            "certificate_hash": "f50f62eeabbdcf6037d9f31fa9110f9397ea7f94"
+          }
+        },
+        {
+          "client_id": "852341205467-lfc2vrkukuttfbi08jn4goopd66kafm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPqhwZQUKoHU7pgbQh99EoeK1pSx8wRs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852341205467-lfc2vrkukuttfbi08jn4goopd66kafm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852341205467:android:011b585e523273c2",
+        "android_client_info": {
+          "package_name": "com.lkb.baseandroidproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852341205467-eca6hdl27976orp772ojjs09adkrjlkd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lkb.baseandroidproject",
+            "certificate_hash": "f50f62eeabbdcf6037d9f31fa9110f9397ea7f94"
+          }
+        },
+        {
+          "client_id": "852341205467-lfc2vrkukuttfbi08jn4goopd66kafm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPqhwZQUKoHU7pgbQh99EoeK1pSx8wRs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852341205467-lfc2vrkukuttfbi08jn4goopd66kafm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852341205467:android:01b089806aa2d057",
+        "android_client_info": {
+          "package_name": "com.lkb.radio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852341205467-lfc2vrkukuttfbi08jn4goopd66kafm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPqhwZQUKoHU7pgbQh99EoeK1pSx8wRs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852341205467-lfc2vrkukuttfbi08jn4goopd66kafm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
