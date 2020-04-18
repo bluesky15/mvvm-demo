@@ -41,7 +41,7 @@ public class UserValidationService {
                     }
                     if (pass != null) {
                         if (pass.contentEquals(password)) {
-                            validToken.postValue("kjdfkjkf-kdfk-jkjdkf-kjdfk");
+                            validToken.postValue("fc928d8c-9914-41e2-b88e-300c7ce7f639");
                         } else {
                             validToken.postValue("");
                         }

@@ -11,44 +11,32 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.lkb.demo.R;
+import com.lkb.demo.databinding.ActivityMainBinding;
 import com.lkb.demo.viewmodel.LoginViewModel;
+import com.lkb.demo.viewmodel.LoginViewModelFactory;
 
 //this is view:
 //view will communicate through the viewModel.
 public class LoginActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
-        Button loginButton = findViewById(R.id.loginButton);
-        EditText email = findViewById(R.id.email);
-        ProgressBar progressBar = findViewById(R.id.progressBar);
-        EditText password = findViewById(R.id.password);
-
-        LoginViewModel loginViewModel = new ViewModelProvider(this).get(LoginViewModel.class);
-        loginViewModel.init();
-        loginViewModel.canShowProgressBar().observe(this, canShow -> {
-            if (canShow) {
-                progressBar.setVisibility(View.VISIBLE);
-            } else {
-                progressBar.setVisibility(View.GONE);
-            }
-        });
-        loginViewModel.updateUi().observe(this, t -> {
-            if (t.isEmpty()) {
-                Toast.makeText(this, "UserName or Password is invalid", Toast.LENGTH_SHORT).show();
-            } else {
-                startActivity(new Intent(this, HomeActivity.class));
-            }
-        });
-
-        loginButton.setOnClickListener(v -> {
-            loginViewModel.doLogin(email.getText().toString(), password.getText().toString());
-        });
-    }
+  @Override
+  protected void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+    binding.setLifecycleOwner(this);
+    LoginViewModel loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
+        .get(LoginViewModel.class);
+    binding.setViewmodel(loginViewModel);
+    loginViewModel.updateUi().observe(this, t -> {
+      if (t.isEmpty()) {
+        Toast.makeText(this, "UserName or Password is invalid", Toast.LENGTH_SHORT).show();
+      } else {
+        startActivity(new Intent(this, HomeActivity.class));
+      }
+    });
+  }
 }
